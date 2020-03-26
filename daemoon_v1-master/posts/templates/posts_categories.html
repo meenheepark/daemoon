@@ -1,0 +1,8 @@
+
+<!--등록된 카테고리 출력-->
+{% for category in categories%}
+    {% if category == 'architecture'%}
+        <h1> hello world </h1>
+    {% endif%}
+<a href="{% url 'posts:posts_list' category %}"><h1> {{category}} </h1></a> <br>
+{% endfor %}

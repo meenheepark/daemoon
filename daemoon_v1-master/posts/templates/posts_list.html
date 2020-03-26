@@ -1,0 +1,7 @@
+
+<a href="{% url 'posts:posts_new' %}"><p> 글 쓰기 </p> </a>
+
+{% for post in posts%}
+<h1> {{post.title}} </h1>
+{{post.body}}
+{% endfor%}

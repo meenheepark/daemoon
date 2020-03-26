@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>회원가입</h1>
+
+    <form method="POST" action="{% url 'accounts:signup' %}">
+    {% csrf_token %}
+    아이디 : 
+    <input type="text" name="username">
+    <br>
+    비밀번호 :
+    <input type="password1" name="password">
+    <br>
+    비밀번호(확인):
+    <input type="password2" name="password">
+    <br>
+    <input type="submit" class="btn btn-primary" value="로그인">
+    </form>
+</div>
